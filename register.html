@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="blur"></div>
+    <form>
+        <label for="name">Имя:</label>
+        <input type="text" pattern="^[А-ЯЁа-яё]+$" id="name" name="name" required title="Пожалуйста, введите только русские буквы">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+          <option value="male">Мужской</option>
+          <option value="female">Женский</option>
+        </select>
+        
+        <label>Увлечения:</label>
+       
+        <label for="hobby1"> 
+            <input type="checkbox" id="hobby1" name="hobby1" value="reading" required title="ЗДЕСЬ СЛУШАЮТ ТОЛЬКО ХАРД-РОК">
+            Рок
+        </label>
+        
+        <label for="hobby2">
+            <input type="checkbox" id="hobby2" name="hobby2" value="sports">
+            Остальная попса
+        </label>
+        
+        <label>Страна:</label>
+        
+        <label for="country1">
+            <input type="radio" id="country1" name="country" value="usa">
+            Россия
+        </label>
+        
+        <label for="country2">
+            <input type="radio" id="country2" name="country" value="uk">
+            СНГ
+        </label>
+
+        <button type="submit" formaction="index.html">Отправить</button>
+      </form>
+</body>
+</html>
